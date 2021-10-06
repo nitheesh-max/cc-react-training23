@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Complex Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id = "calculator">
+       <div id="result">
+                <!-- <input type="text" id="textbox"/> -->
+                <p id="textbox"></p>
+       </div> 
+       <div id="keyboard">
+           <div class = "row">
+            <button class="button" onclick="clearAll()">CE</button>
+            <button class="button" onclick="clearOne()">DEL</button>
+            <button class="button" onclick="inputText('%')">%</button>
+            <button class="button" onclick="inputText('/')">/</button>
+           </div>
+           <div class = "row">
+            <button class="button" onclick="inputText('7')">7</button>
+            <button class="button" onclick="inputText('8')">8</button>
+            <button class="button" onclick="inputText('9')">9</button>
+            <button class="button" onclick="inputText('*')">*</button>
+           </div>
+           <div class = "row">
+            <button class="button" onclick="inputText('4')">4</button>
+            <button class="button" onclick="inputText('5')">5</button>
+            <button class="button" onclick="inputText('6')">6</button>
+            <button class="button" onclick="inputText('-')">-</button>
+           </div>
+           <div class = "row">
+            <button class="button" onclick="inputText('1')">1</button>
+            <button class="button" onclick="inputText('2')">2</button>
+            <button class="button" onclick="inputText('3')">3</button>
+            <button class="button" onclick="inputText('+')">+</button>
+           </div>
+           <div class = "row">
+            <button class="button" style="opacity:0"></button>
+            <button class="button" onclick="inputText('0')">0</button>
+            <button class="button" style="opacity:0"></button>
+            <button class="button" onclick="result()">=</button>
+           </div>
+       </div>
+    </div>
+</body>
+</html>
